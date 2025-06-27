@@ -1,0 +1,14 @@
+name: Update README
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Trigger GitHub to recognize profile repo
+        run: echo "Profile repository for bihari123"
